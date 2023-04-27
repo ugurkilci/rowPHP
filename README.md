@@ -1,5 +1,5 @@
 # rowPHP
-Zamanlar ürün geliştirmeyi kolaylaştıracak bir frameworktür. Zamanla ihtiyaca göre geliştireceğim. Her seferinde yeni versiyonlar halinde yayınlayacağım.
+Ürün geliştirmeyi kolaylaştıracak bir frameworktür. Zamanla ihtiyaca göre geliştireceğim. Her seferinde yeni versiyonlar halinde yayınlayacağım.
 
 Şu an temel özellikleri var ama ilerledikçe sadece bunu kullanarak hızlı hızlı ürünler çıkartabileceksiniz. Asıl amacım bu.
 
