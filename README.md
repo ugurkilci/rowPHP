@@ -8,7 +8,7 @@ Her ne kadar Türkçe döküman yazsam da kullanılacak dil İngilizce olacak. K
 ## Kod Kullanım Örnekleri
 
 ### Veri Ekleme
-´´´
+```
 rowAdd(
     "categories",
     [
@@ -16,24 +16,24 @@ rowAdd(
         "name" => "Soru Sor"
     ]
 );
-´´´
+```
 ### Tekli Veri Çekme
-´´´
+```
 rowSee(
     "categories",
     "id=>description",
     "1"
 );
-´´´
+```
 ### Veri Saydırma
-´´´
+```
 rowCount(
     "categories",
     "id"
 );
-´´´
+```
 ### Veri Silme
-´´´
+```
 rowDelete(
     "categories",
     [
@@ -41,9 +41,9 @@ rowDelete(
         "link" => "sitelink"
     ]
 );
-´´´
+```
 ### Veri Güncelleme
-´´´
+```
 rowUpdate(
     "users",
     [
@@ -53,9 +53,9 @@ rowUpdate(
         "id" => $_SESSION["id"]
     ]
 );
-´´´
+```
 ### Zaman dönüştürme (timeConvert) 
 timestampi buraya yazdığınızda "5 saat önce" gibi bir sonuç çıkartıyor.
-´´´
+```
 timeConvert(***);
-´´´
+```
