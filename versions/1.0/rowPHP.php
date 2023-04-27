@@ -124,18 +124,52 @@ function rowUpdate($tableName, $data, $where) {
     $columns = array_keys($data);
     $set = [];
     foreach ($columns as $column) {
-    $set[] = "$column=?";
+        $set[] = "$column=?";
     }
     $query .= implode(",", $set);
     $query .= " WHERE ";
     $conditions = [];
     $whereColumns = array_keys($where);
     foreach ($whereColumns as $column) {
-    $conditions[] = "$column=?";
+        $conditions[] = "$column=?";
     }
     $query .= implode(" AND ", $conditions);
     $values = array_values(array_merge($data, $where));
     $stmt = $db->prepare($query);
     $stmt->execute($values);
     return $stmt;
+}
+
+// 5 saat önce, 3 dakika önce, 1 yıl önce
+
+function timeConvert($time) {
+    $time               = strtotime($time);
+    $time_difference    = time() - $time;
+    $second             = $time_difference;
+    $minute             = round($time_difference / 60);
+    $hour               = round($time_difference / 3600);
+    $day                = round($time_difference / 86400);
+    $week               = round($time_difference / 604800);
+    $month              = round($time_difference / 2419200);
+    $year               = round($time_difference / 29030400);
+
+    if ($second < 60) {
+        if ($second == 0) {
+            return "az önce";
+        } else {
+            return $second . ' saniye önce';
+        }
+    } elseif ($minute < 60) {
+        return $minute . ' dakika önce';
+    } elseif ($hour < 24) {
+        return $hour . ' saat önce';
+    } elseif ($day < 7) {
+        return $day . ' gün önce';
+    } elseif ($week < 4) {
+        return $week . ' hafta önce';
+    } elseif ($month < 12) {
+        return $month . ' ay önce';
+    } else {
+        return $year . ' yıl önce';
+    }
 }
