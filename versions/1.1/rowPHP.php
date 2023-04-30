@@ -78,11 +78,11 @@ function rowDelete($tableName, $data, $type = "and") {
 
     $query      =   "DELETE FROM " . $tableName . " WHERE ";
     $columns    =   array_keys($data);
-    $query      .=  implode("=? $type", $columns) . "=?";
+    $query      .=  implode("=? ".$type." ", $columns) . "=?";
     $dataAdd    =   $db->prepare($query);
     $dataAdd    ->  execute(array_values($data));
 
-    return $delete;
+    return $dataAdd;
 }
 
 // echo rowSee(
