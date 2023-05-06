@@ -254,3 +254,15 @@ function permalink($str, $options = array()){
     $str = trim($str, $options['delimiter']);
     return $options['lowercase'] ? mb_strtolower($str, 'UTF-8') : $str;
 }
+
+
+function csrf()
+{
+    echo '<input type="hidden" name="_token" value="'.$_SESSION["_token"].'">';
+}
+
+function csrfControl()
+{
+    // Post içinde kullanınız. Bilhassa en tepesinde.
+    if ($_POST["_token"] !== $_SESSION["_token"]) { die('CSRF Token!'); }
+}
