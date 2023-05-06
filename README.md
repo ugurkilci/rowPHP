@@ -7,6 +7,8 @@
 
 Her ne kadar Türkçe döküman yazsam da kullanılacak dil İngilizce olacak. Kod İngilizce olarak yazılacak. Biraz daha dünya standartlarına ulaşmak istiyorum. Issue açmaktan çekinmeyin. :)
 
+Edit: Hepsinin bir dosyada olması, versiyon hali beni çok zorladı. Ben normalde ayrı ayrı kullanıyorum. Bir ara burayı güncelleyeceğim.
+
 ## Kod Kullanım Örnekleri
 
 ### Veri Ekleme
