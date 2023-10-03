@@ -27,7 +27,7 @@ Ben arka tarafta yavaş yavaş ihtiyaca göre geliştiriyorum. Vakit buldukça b
 - İngilizce olmasının sebebi büyük projelerle bir harmoni ile çalışması için aksi halde arkamızdan söverler.
 - Türkçe dinamikleriyle kodlandı. Türkçe sondan eklemeli bir dildir. Oku => okumak gibi sondan ekleniyor. Aynı şekilde rowSee(); fonksiyonunda 1 tane veriyi çekerken tüm satırı çekmek için rowSeeAll(); kullanıyoruz. Yani o özelliğin hep sonunda ekleme gelmektedir.
 - Fonksiyon yapısını kullanmaktadır.
-- Fonksiyonlarda came case isimlendirme kullanmaktadır.
+- Fonksiyonlarda camel case isimlendirme kullanmaktadır.
 - Tüm fonksiyonlar "row" ile başlamaktadır. Çünkü öğrenmesi çok kolay. Bazıları mantık hataları oluştursa da bu kuralı koydum çünkü gerçekten akılda kalması çok kolay. Örneğin time convert için row niye başa yazılır ki? Biraz mantık hatası oluyor ama öğrenim kolaylığı için hepsinin başında "row" olması öğrenmesi kolay olur. Ayrıca başka fonksiyonlar ve kodlarla karışmaması için işe yaramaktadır. Aksi halde başka bir kodu ezebilir veya hata verebilir.
 - Sadece init.php'de "row" yok çünkü bu bir dosya. Ekstra bir fonksiyon değil. Belki duruma göre ekleyebilirim. Hatta bir ara eklesem hiç fena olmaz.
 
