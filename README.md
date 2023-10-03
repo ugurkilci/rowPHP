@@ -13,7 +13,7 @@ Ben arka tarafta yavaş yavaş ihtiyaca göre geliştiriyorum. Vakit buldukça b
 - Veri sayfalama
 - Veri saydırma: Veritabanında kaç tane veri varsa onların toplamını yazdırıyor
 - Veritabanı kontrolü: Kullanıcı adı var mı yok mu diye kontrol etmek yada eposta daha önce eklenip eklenmediğini kontrol etmek gibi
-- - Veri bağlantısı
+- Veri bağlantısı
 - Postgre SQL için veri bağlantısı: Supabase'de kullanılabilmektedir
 - CSRF güvenliği
 - SEO uyumlu link oluşturma / Sef Link / Permalink
