@@ -32,4 +32,4 @@ Ben arka tarafta yavaş yavaş ihtiyaca göre geliştiriyorum. Vakit buldukça b
 - Sadece init.php'de "row" yok çünkü bu bir dosya. Ekstra bir fonksiyon değil. Belki duruma göre ekleyebilirim. Hatta bir ara eklesem hiç fena olmaz.
 
 # Neden Row?
-Çünkü foreach işleminde yıllarca row ile yazdırdım. Ve aklıma ekstra yaratıcı bir şey gelmedi. İlk aklıma geleni koydum. Ve bu tüm dillerde kolay telafuz edilebiliyor. Magic deseydim biz ona megiç demezdik, magic derdik. Ama row hep row.
+Çünkü foreach işleminde yıllarca row ile yazdırdım. Ve aklıma ekstra yaratıcı bir şey gelmedi. İlk aklıma geleni koydum. Ve bu tüm dillerde kolay telafuz edilebiliyor. Magic deseydim biz ona mecig demezdik, magic derdik. Ama row hep row.
