@@ -1,11 +1,11 @@
 <?php
 
-// echo rowAllSee(
+// echo rowSeeAll(
 //     "categories",
 //     ["id" => $id]
 // );
 
-function rowAllSee($tableName, $columns)
+function rowSeeAll($tableName, $columns)
 {
     global $db; // Global veritabanı bağlantısını kullanacağımızı belirtiyoruz.
 
