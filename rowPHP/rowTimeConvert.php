@@ -2,7 +2,7 @@
 
 // Kullanım örnekleri:
 // 2. parametre zorunlu değildir. Yazılmadığınde otomatik İngilizce çalışacaktır.
-// echo timeConvert("2023-10-03 12:34:56", [
+// echo rowTimeConvert("2023-10-03 12:34:56", [
 //     'just_now' => 'şimdi',
 //     'secs' => 'sn',
 //     'mins' => 'dk',
@@ -13,7 +13,7 @@
 //     'yrs' => 'yıl'
 // ]); 
 
-function timeConvert($time, $customTranslations = null) {
+function rowTimeConvert($time, $customTranslations = null) {
     // Dil çevirileri belirtilen dilde yoksa varsayılan İngilizce çeviriler kullanılır.
     $translations = [
         'en' => [
