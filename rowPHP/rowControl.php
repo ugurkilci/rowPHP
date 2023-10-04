@@ -6,16 +6,24 @@
 //     echo "Email address does not exist in the database.";
 // }
 
-function rowControl($table, $column, $value) {
+// Eğer sadece tek parametere kullanılırsa bunun anlamı o veritabanındaki tüm seçeneklerin varlığını kontrol etmesidir. rowControl("tablo_adi");
+
+function rowControl($table, $column = null, $value = null) {
     global $db; // Global veritabanı bağlantısını kullanacağımızı belirtiyoruz.
 
-    // SQL sorgusunu hazırlıyoruz.
-    $selectRow = $db->prepare("SELECT * FROM $table WHERE $column = ?");
-    $selectRow->execute([$value]);
+    // Eğer $column ve $value değerleri null değilse, WHERE koşulunu ekliyoruz.
+    $whereClause = "";
+    $params = [];
+    if ($column !== null && $value !== null) {
+        $whereClause = "WHERE $column = ?";
+        $params = [$value];
+    }
 
-    // Sorgunun döndürdüğü satır sayısını alıyoruz.
+    $selectRow = $db->prepare("SELECT * FROM $table $whereClause");
+    $selectRow->execute($params);
+
     $rowCount = $selectRow->rowCount();
 
-    // Satır sayısının 0'dan büyük olup olmadığını kontrol ediyoruz.
     return $rowCount > 0;
 }
+
